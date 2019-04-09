@@ -14,6 +14,7 @@
 		E4928734225CF08200CF0F2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4928732225CF08200CF0F2B /* LaunchScreen.storyboard */; };
 		E492873F225CF08200CF0F2B /* Hello_DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492873E225CF08200CF0F2B /* Hello_DrawingTests.swift */; };
 		E492874A225CF08200CF0F2B /* Hello_DrawingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4928749225CF08200CF0F2B /* Hello_DrawingUITests.swift */; };
+		E492875A225CF87200CF0F2B /* Myview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4928759225CF87200CF0F2B /* Myview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E4928745225CF08200CF0F2B /* Hello,DrawingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello,DrawingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4928749225CF08200CF0F2B /* Hello_DrawingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_DrawingUITests.swift; sourceTree = "<group>"; };
 		E492874B225CF08200CF0F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4928759225CF87200CF0F2B /* Myview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Myview.swift; path = ../Myview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		E4928728225CF08100CF0F2B /* Hello,Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				E4928759225CF87200CF0F2B /* Myview.swift */,
 				E4928729225CF08100CF0F2B /* AppDelegate.swift */,
 				E492872B225CF08100CF0F2B /* ViewController.swift */,
 				E492872D225CF08100CF0F2B /* Main.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				E492872C225CF08100CF0F2B /* ViewController.swift in Sources */,
 				E492872A225CF08100CF0F2B /* AppDelegate.swift in Sources */,
+				E492875A225CF87200CF0F2B /* Myview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
