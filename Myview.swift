@@ -56,6 +56,8 @@ class Myview: UIView {
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
         print("Cancelled: \(String(describing: touch?.location(in:self)))")
+        
+        //vbn
     }
     }
  
