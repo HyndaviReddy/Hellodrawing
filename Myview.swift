@@ -14,7 +14,20 @@ class Myview: UIView {
      // An empty implementation adversely affects performance during animation.
      */
     var points:[[CGPoint]] = []
-    var color:[UIColor] = []
+    var colors:[UIColor] = []
+    required init?(coder aDecoder: NSCoder){
+        super.init(coder: aDecoder)
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(erase(gr:)))
+  tapGR.numberOfTapsRequired = 2
+        self.addGestureRecognizer(tapGR)
+    
+    
+    }
+    @objc func erase(gr:UITapGestureRecognizer){
+        points = []
+        colors = []
+        setNeedsDisplay()
+    }
     override func draw(_ rect: CGRect) {
         // Drawing code
         
@@ -28,7 +41,7 @@ class Myview: UIView {
                 
                 let path = UIBezierPath()
                 //UIColor.red.setStroke()
-                color[i].setStroke()
+                colors[i].setStroke()
                 path.move(to:subpath[0])
                 // path.move(to:points[0])
                 //for pt in points{
@@ -52,7 +65,7 @@ class Myview: UIView {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
         points.append([(touch?.location(in: self))!])
-        color.append(UIColor(displayP3Red: CGFloat(Float.random(in: 0.0 ... 1.0)), green: CGFloat(Float.random(in: 0.0 ... 1.0)), blue: CGFloat(Float.random(in: 0.0 ... 1.0)), alpha: 1.0))
+        colors.append(UIColor(displayP3Red: CGFloat(Float.random(in: 0.0 ... 1.0)), green: CGFloat(Float.random(in: 0.0 ... 1.0)), blue: CGFloat(Float.random(in: 0.0 ... 1.0)), alpha: 1.0))
         print("Began: \(String(describing: touch?.location(in: self)))")
     }
     
