@@ -70,6 +70,6 @@ class Myview: UIView {
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
-        print("Cancelle: \(String(describing: touch?.location(in: self)))")
+        print("Cancelled: \(String(describing: touch?.location(in: self)))")
     }
 }
